@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Pembayaran boost x8 - Siapa Saja yang Sudah Bayar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .note {
+            color: red;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Orang yang Sudah Bayar</h1>
+        <p class="note">Catatan: Pastikan nama yang sudah tertera di tulis dengan benar jika ketika ada kesalahn silahkan hub admin.</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Username (USN)</th>
+                    <th>Nomor Telepon</th>
+                    <th>Status Pembayaran</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data dummy - Ganti dengan data asli Anda -->
+                <tr>
+                    <td>1</td>
+                    <td>nurztls</td>
+                    <td>088989317619</td>
+                    <td>Sudah Bayar</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>bnmal45</td>
+                    <td>083841857803</td>
+                    <td>Sudah Bayar</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>SanZxTalon02</td>
+                    <td>088102491711</td>
+                    <td>Sudah Bayar</td>
+                </tr>
+                <!-- Tambahkan baris baru di sini untuk data lebih banyak -->
+            </tbody>
+        </table>
+        
+        <p>hub admin nomor :<a href="088293269186">088293269186</a>  salin aja ya</p>
+    </div>
+    
+    <script>
+        // Opsional: Tambahkan JavaScript untuk fitur seperti pencarian
+        // Contoh sederhana: Fungsi pencarian berdasarkan username
+        function searchTable() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const rows = document.querySelectorAll('tbody tr');
+            rows.forEach(row => {
+                const username = row.cells[1].textContent.toLowerCase();
+                row.style.display = username.includes(input) ? '' : 'none';
+            });
+        }
+        // Tambahkan input pencarian di HTML jika diperlukan
+    </script>
+</body>
+</html>
